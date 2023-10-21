@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //even or odd
+        alert("Check even or odd");
+        var x=+prompt("Enter a number");
+        if(x%2==0){
+            alert(x+" is even");
+        }
+        else{
+            alert(x+" is odd");
+        }
+        //leap year
+        alert("Leap year check");
+        var year=+prompt("enter a year");
+        if(year%4==0 && year%100!==0 || year%400==0){
+            alert(year+" is a leap year");
+        }
+        else{
+            alert(year+" is not a leap year");
+        }
+        //largest number
+        alert("Find the largest number");
+        var num1=+prompt("Enter first number");
+        var num2=+prompt("Enter second number");
+        var num3=+prompt("Enter third number");
+        if(num1>=0 && num2>=0 && num3>=0){
+            if(num1>num2 && num1>num3){
+                alert(num1+" is largest number");
+            }
+            else if(num2>num1 && num2>num3){
+                alert(num2+" is largest number");
+            }
+            else if(num3>num1 && num3>num2){
+                alert(num3+" is largest number");
+            }
+            else{
+                alert("all are equal");
+            }
+        }
+        else{
+            alert("entered number is negative");
+        }
+        //Time of the day
+        alert("Time of the day");
+        var hr=+prompt("enter time in 24hr format");
+        if(hr>=0 && hr<=24){
+            if (hr>=6 && hr<=11){
+                alert("Good morning");
+            }
+            else if(hr>=12 && hr<=17){
+                alert("Good afternoon");
+            }
+            else if(hr>=18 && hr<=23){
+                alert("Good evening");
+            }
+            else{
+                alert("Good night");
+            }
+        }
+        else{
+            alert("entered value is invalid");
+        }
+        //currency converter
+        alert("Currency converter");
+        var c=+prompt("Enter the amount");
+        var i=prompt("Enter a input currency code,Ex: USD, INR, EUR");
+        var o=prompt("Enter a output currency code,Ex: USD, INR EUR");
+        if(i=="USD" && o=="INR"){
+           alert(c+ i+ " is equal to " +c*83.2 +" INR");
+        }
+        else if(i=="INR" && o=="USD"){
+           alert(c+ i+" is equal to "+c*0.012 + " USD");
+        }
+        else if(i=="USD" && o=="EUR"){
+           alert(c+ i+ " is equal to " +c*0.949 +" EUR");
+        }
+        else if(i=="EUR" && o=="USD"){
+           alert(c+ i+" is equal to "+c*1.052 + " USD");
+        }
+        else if(i=="EUR" && o=="INR"){
+           alert(c+ i+ " is equal to " +c*87.6 +" INR");
+        }
+        else if(i=="INR" && o=="EUR"){
+           alert(c+ i+" is equal to "+c*0.0114 + " EUR");
+        }
+        else{
+            alert("invalid input");
+        } 
+        //traffic light
+        alert("Traffic light");
+        var t=prompt("enter any of the traffic signal colour ex:red , yellow, green");
+        switch(t){
+           case "red":alert("Stop and wait");
+           break;
+           case "yellow":alert("Slow down");
+           break;
+           case "green":alert("Go");
+           break;
+           default:alert("enter correct signal colour");
+        }
+        //seasons
+        alert("Seasons");
+        var s=prompt("enter the month in Sentence case ex:January");
+        switch(s) {
+           case "January" :alert(s+ " is Winter season");
+           break;
+           case "February" :alert(s+ " is Winter season");
+           break;
+           case "December" :alert(s+ " is Winter season");
+           break;
+           case "March":alert(s+ " is Summer season");
+           break;
+           case "April" :alert(s+ " is Summer season");
+           break;
+           case "May" :alert(s+ " is Summer season");
+           break;
+           case "June":alert(s+ " is Monsoon season");
+           break;
+           case "July":alert(s+ " is Monsoon season");
+           break;
+           case "August":alert(s+ " is Monsoon season");
+           break;
+           case "September":alert(s+ " is Autumn season");
+           break;
+           case "October":alert(s+ " is Autumn season");
+           break;
+           case "November":alert(s+ " is Autumn season");
+           break;
+           default:alert("enter a valid one");
+        }
+        //memu selection
+        alert("Menu Selection");
+        var m=+prompt("select a menu with any one of the options: 1 , 2, 3, 4 ");
+        switch(m){
+           case 1: alert(" Option 1");
+           break;
+           case 2: alert(" Option 2");
+           break;
+           case 3: alert(" Option 3");
+           break;
+           case 4: alert(" Option 4");
+           break;
+           default:alert("please choose within the options available");
+        }
+
+    </script>
+</body>
+</html>
